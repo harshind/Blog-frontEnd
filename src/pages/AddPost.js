@@ -48,7 +48,7 @@ const AddPost = () => {
           ...postObj
         })
       };
-      fetch("https://x9q94.sse.codesandbox.io/posts/", requestOptions)
+      fetch("https://obscure-fjord-59024.herokuapp.com/posts/", requestOptions)
         .then((response) => {
           response.json();
           setLoad(true);

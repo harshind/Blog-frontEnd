@@ -4,7 +4,7 @@ const useAuthors = () => {
   const [authors, setAuthors] = useState([]);
 
   useEffect(() => {
-    fetch("https://x9q94.sse.codesandbox.io/authors")
+    fetch("https://obscure-fjord-59024.herokuapp.com/authors")
       .then((res) => res.json())
       .then((data) => setAuthors(data.authors));
   }, []);

@@ -10,7 +10,7 @@ const Author = () => {
   const { goBack } = useHistory();
 
   useEffect(() => {
-    fetch(`https://x9q94.sse.codesandbox.io/authors/${params.authorId}`)
+    fetch(`https://obscure-fjord-59024.herokuapp.com/authors/${params.authorId}`)
       .then((res) => res.json())
       .then((data) => {
         setAuthor(data.authorPost);

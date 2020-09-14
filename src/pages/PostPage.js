@@ -10,7 +10,7 @@ const PostPage = () => {
   const { goBack } = useHistory();
 
   useEffect(() => {
-    fetch(`https://x9q94.sse.codesandbox.io/posts/${params.id}`)
+    fetch(`https://obscure-fjord-59024.herokuapp.com/posts/${params.id}`)
       .then((res) => res.json())
       .then((data) => setPost(data.post));
   }, [params]);
